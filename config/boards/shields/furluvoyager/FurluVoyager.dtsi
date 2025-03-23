@@ -4,7 +4,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &FurluVoyager_layout;
+        zmk,matrix_transform = &default_transform;
     };
     
     kscan0: kscan {
@@ -19,7 +19,7 @@
                     <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
-    default_transform: matrix_transform {
+    default_transform: keymap_transform {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <5>;
@@ -31,8 +31,4 @@
                                                     RC(4,4) RC(4,5)     RC(4,6) RC(4,7)
         >;
     };
-};
-
-&FurluVoyager_layout {
-    transform = <&default_transform>;
 };
