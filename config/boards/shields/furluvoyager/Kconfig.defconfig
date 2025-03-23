@@ -1,0 +1,6 @@
+if SHIELD_FURLUVOYAGER
+
+config ZMK_KEYBOARD_NAME
+    default "FurluVoyager"
+
+endif
