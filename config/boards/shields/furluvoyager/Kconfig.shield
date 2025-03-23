@@ -1,2 +1,5 @@
-config SHIELD_FURLUVOYAGER
-    def_bool $(shields_list_contains, FurluVoyager)
+config SHIELD_FURLUVOYAGER_LEFT
+    def_bool $(shields_list_contains,FurluVoyager_left)
+
+config SHIELD_FURLUVOYAGER_RIGHT
+    def_bool $(shields_list_contains,FurluVoyager_right)
